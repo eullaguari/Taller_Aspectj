@@ -55,8 +55,9 @@ public class Clientes extends Entidad{
 		System.out.println("Consultando");
 		JLabel msj = new JLabel("Has consultado "+cliente);
 		mensaje.add(msj);
-		mensaje.setVisible(true);
 		mensaje.setSize(300, 200);
+		if(IniciarSesion.sesionIniciada)
+			mensaje.setVisible(true);
 		// TODO: Utilizar el Frame mensaje para mostrar el msj		
 	}
 

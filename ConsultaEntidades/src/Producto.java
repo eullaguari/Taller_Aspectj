@@ -35,11 +35,11 @@ public class Producto extends Entidad {
 			
 			System.out.println("Consultando");
 			JLabel msj = new JLabel("Has consultado "+producto);
-			mensaje.setVisible(true);
 			mensaje.add(msj);
 			mensaje.setSize(300, 200);
+			if(IniciarSesion.sesionIniciada)
+				mensaje.setVisible(true);
 			// TODO: Utilizar el Frame mensaje para mostrar el nombre de lo que se ha consultado		
-		
 	}
 	
 	public void llenarPane() {
